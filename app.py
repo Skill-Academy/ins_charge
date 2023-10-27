@@ -9,7 +9,6 @@ st.header('Fill the details to predict Insurance Charges')
 
 lr = pickle.load(open('ins_charges_lr_model.pkl','rb'))     # rb = read binary
 dt = pickle.load(open('ins_charges_dt_model.pkl','rb'))
-adab = pickle.load(open('ins_charges_adab_model.pkl','rb'))
 rf = pickle.load(open('ins_charges_rf_model.pkl','rb'))
 
 model = st.sidebar.selectbox('Select model',['Lin_Reg','DT_Reg','RF_Reg',''])
